@@ -11,12 +11,13 @@ export default function Home() {
         </h2>
 
         <Image
-          src="/crackedEgg.gif"
+          src="/floatingEgg.gif"
           alt="Cracked Egg Animation"
           width={180}
           height={180}
           priority
           className="my-8"
+          unoptimized
         />
 
         <div className="mt-8">

@@ -7,19 +7,19 @@ export default function RecipesPage() {
       id: "soft-boiled",
       title: "Soft Boiled",
       time: "6 minutes",
-      image: "/soft-boiled.jpg",
+      image: "/soft-boiled.webp",
     },
     {
       id: "hard-boiled",
       title: "Hard Boiled",
       time: "8 minutes",
-      image: "/hard-boiled.jpg",
+      image: "/hard-boiled.webp",
     },
     {
       id: "poached",
       title: "Poached",
       time: "3 minutes",
-      image: "/poached.jpg",
+      image: "/poached.webp",
     },
     // Add more recipes as needed
   ];
