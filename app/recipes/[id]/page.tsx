@@ -13,7 +13,7 @@ export default function RecipeDetailPage({ params }: Props) {
     "soft-boiled": {
       title: "Soft Boiled Egg",
       time: "6 minutes",
-      image: "/soft-boiled.jpg",
+      image: "/soft-boiled.webp",
       instructions: [
         "Bring water to a gentle boil",
         "Gently lower egg into water",
@@ -24,7 +24,32 @@ export default function RecipeDetailPage({ params }: Props) {
       ],
       tips: "For the perfect runny yolk, timing is crucial. Start with room temperature eggs.",
     },
-    // Add more recipes as needed
+    "hard-boiled": {
+      title: "Hard Boiled Egg",
+      time: "8 minutes",
+      image: "/hard-boiled.webp",
+      instructions: [
+        "Bring water to a gentle boil",
+        "Gently lower egg into water",
+        "Set timer for 8 minutes",
+        "Remove egg and place in ice bath",
+        "Peel and enjoy!",
+      ],
+      tips: "For the perfect hard-boiled egg, timing is crucial. Start with room temperature eggs.",
+    },
+    poached: {
+      title: "Poached Egg",
+      time: "3 minutes",
+      image: "/poached.webp",
+      instructions: [
+        "Bring water to a gentle boil",
+        "Gently lower egg into water",
+        "Set timer for 3 minutes",
+        "Remove egg and place in ice bath",
+        "Peel and enjoy!",
+      ],
+      tips: "For the perfect poached egg, timing is crucial. Start with room temperature eggs.",
+    },
   };
 
   const recipe = recipeDetails[params.id as keyof typeof recipeDetails];
