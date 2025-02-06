@@ -19,3 +19,24 @@ body {
   background: var(--background);
   font-family: var(--font-concert-one), Arial, Helvetica, sans-serif;
 }
+
+@keyframes push {
+  0%,
+  100% {
+    transform: translateY(0);
+    box-shadow: 0 0 0 0 #c53030, 0 0 0 0 #742a2a;
+    border-bottom-width: 0;
+  }
+  50% {
+    transform: translateY(2px);
+    box-shadow: 0 2px 0 0 #c53030, 0 4px 0 0 #742a2a;
+    border-bottom-width: 1px;
+  }
+}
+
+@layer utilities {
+  .animate-push {
+    animation: push 0.3s ease-in-out;
+  }
+}
+
