@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import { IMAGES } from "../constants";
 
 export default function RecipesPage() {
   const recipes = [
@@ -7,19 +8,19 @@ export default function RecipesPage() {
       id: "soft-boiled",
       title: "Soft Boiled",
       time: "6 minutes",
-      image: "/soft-boiled.webp",
+      image: IMAGES.SOFT_BOILED,
     },
     {
       id: "hard-boiled",
       title: "Hard Boiled",
       time: "8 minutes",
-      image: "/hard-boiled.webp",
+      image: IMAGES.HARD_BOILED,
     },
     {
       id: "poached",
       title: "Poached",
       time: "3 minutes",
-      image: "/poached.webp",
+      image: IMAGES.POACHED,
     },
     // Add more recipes as needed
   ];

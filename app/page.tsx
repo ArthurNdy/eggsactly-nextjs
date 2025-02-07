@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { RedButton } from "./components/redButton";
+import { IMAGES } from "./constants";
 
 export default function Home() {
   return (
@@ -11,7 +12,7 @@ export default function Home() {
         </h2>
 
         <Image
-          src="/floatingEgg.gif"
+          src={IMAGES.FLOATING_EGG}
           alt="Cracked Egg Animation"
           width={180}
           height={180}

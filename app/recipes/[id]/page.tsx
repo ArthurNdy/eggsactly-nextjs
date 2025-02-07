@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import { IMAGES } from "../../constants";
 
 type PageProps = {
   params: Promise<{ id: string }>;
@@ -18,7 +19,7 @@ export default async function RecipeDetailPage({ params }: PageProps) {
     "soft-boiled": {
       title: "Soft Boiled Egg",
       time: "6 minutes",
-      image: "/soft-boiled.webp",
+      image: IMAGES.SOFT_BOILED,
       instructions: [
         "Bring water to a gentle boil",
         "Gently lower egg into water",
@@ -32,7 +33,7 @@ export default async function RecipeDetailPage({ params }: PageProps) {
     "hard-boiled": {
       title: "Hard Boiled Egg",
       time: "8 minutes",
-      image: "/hard-boiled.webp",
+      image: IMAGES.HARD_BOILED,
       instructions: [
         "Bring water to a gentle boil",
         "Gently lower egg into water",
@@ -45,7 +46,7 @@ export default async function RecipeDetailPage({ params }: PageProps) {
     poached: {
       title: "Poached Egg",
       time: "3 minutes",
-      image: "/poached.webp",
+      image: IMAGES.POACHED,
       instructions: [
         "Bring water to a gentle boil",
         "Gently lower egg into water",
