@@ -4,6 +4,12 @@ import Link from "next/link";
 type PageProps = {
   params: Promise<{ id: string }>;
 };
+export async function generateStaticParams() {
+  const recipeIds = ["soft-boiled", "hard-boiled", "poached"];
+  return recipeIds.map((id) => ({
+    id,
+  }));
+}
 export default async function RecipeDetailPage({ params }: PageProps) {
   const { id } = await params;
 
