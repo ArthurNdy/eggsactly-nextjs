@@ -1,13 +1,12 @@
 import Image from "next/image";
 import Link from "next/link";
 
-type Props = {
-  params: {
-    id: string;
-  };
+type PageProps = {
+  params: Promise<{ id: string }>;
 };
+export default async function RecipeDetailPage({ params }: PageProps) {
+  const { id } = await params;
 
-export default function RecipeDetailPage({ params }: Props) {
   // This would typically come from a database or API
   const recipeDetails = {
     "soft-boiled": {
@@ -52,7 +51,7 @@ export default function RecipeDetailPage({ params }: Props) {
     },
   };
 
-  const recipe = recipeDetails[params.id as keyof typeof recipeDetails];
+  const recipe = recipeDetails[id as keyof typeof recipeDetails];
 
   if (!recipe) {
     return <div>Recipe not found</div>;
